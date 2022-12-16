@@ -9,4 +9,9 @@ export const GlobalStyles= createGlobalStyle`
     box-sizing: border-box;
 }
 
+body{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
 `

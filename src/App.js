@@ -1,9 +1,11 @@
 import './App.css';
+import AppRouter from "./router/AppRouter"
 
 function App() {
   return (
     <div className="App">
-     RECIPE APP
+      {/*App da fazla dosya görünmemesi için AppRouter Componentini buraya çağırdım*/}
+<AppRouter/>
     </div>
   );
 }

@@ -16,15 +16,14 @@ const Home = () => {
   const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${selectedMeal}`;
 
   const getData = async () => {
-    // eğer sorgu varsa tedch fonksiyonu çalışacak
     if (query) {
       try {
-        const { data } = await axios(url);
+        const { data } = await axios.get(url);
         setRecipes(data.hits);
       } catch (error) {
         console.log(error);
       }
-    } else {
+    }  else {
       alert("Please fill the form");
     }
   };

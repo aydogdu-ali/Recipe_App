@@ -10,7 +10,7 @@ import Login from "../pages/login/Login"
 import PrivateRouter from './PrivateRouter'
 
 
-// Bu komponenti App.js dosyası kullanacağım için Router işlemlerini bo componentte yaptım.
+// Bu komponenti App.js dosyası kullanacağım için Router işlemlerini bu componentte yaptım.
 const AppRouter = () => {
   return (
     <BrowserRouter>

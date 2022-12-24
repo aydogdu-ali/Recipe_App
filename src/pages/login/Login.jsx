@@ -7,7 +7,8 @@ const Login = () => {
   const navigate = useNavigate();
   
   const userInfo={
-    username:"admin"
+    username:"ali",
+    password:"ali"
   }
 
 
@@ -31,8 +32,8 @@ const Login = () => {
 {"<Chef>"} Recipe
     </Header>
     <StyledForm onSubmit={handleSubmit}>
-    <StyledInput placeholder="Enter username" type="text" />
-          <StyledInput placeholder="Enter Password" type="password" />
+    <StyledInput placeholder=" ali giriniz" type="text" />
+          <StyledInput placeholder="ali giriniz" type="password" />
           <StyledButton type="submit">Login</StyledButton>
 
     </StyledForm>

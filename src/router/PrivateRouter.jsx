@@ -5,12 +5,12 @@ import { Outlet,Navigate } from 'react-router-dom';
 const PrivateRouter = () => {
 
   // Burda kullanıcı varmış gibi simüle ettim.
-  const user = true;
+  const userinfo= true
   return (
     <div>
 
 {/*Kullanıcı varsa tıkladığı sayfayı görecek yoksa giriş işlemi için login olacak*/}
-    {user ? <Outlet/>: <Navigate to ="/login"/> }
+    {userinfo ? <Outlet/>: <Navigate to ="/login"/> }
     </div>
   )
 }

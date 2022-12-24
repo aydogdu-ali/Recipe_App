@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+
 import {Nav, Brand, Menu, MenuLink,Hamburger} from "./Navbar.style"
 import {GiHamburgerMenu} from "react-icons/gi"
 
@@ -26,6 +26,7 @@ const [isOpen, setIsOpen] = useState(false)
   <MenuLink to="/" > Home</MenuLink> 
   <MenuLink to="about" > About</MenuLink> 
   <MenuLink to="register" > Register</MenuLink> 
+  {/*Kullanıcı bilgigini localden temizledim.*/}
   <MenuLink to="Logout" onClick={()=>sessionStorage.clear()}> Logout</MenuLink> 
 </Menu>
 

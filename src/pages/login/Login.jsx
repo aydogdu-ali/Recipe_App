@@ -13,6 +13,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Kullanıcı bilgisini locale yazdım.
     sessionStorage.setItem("user",JSON.stringify(userInfo))
     navigate(-1)
   }

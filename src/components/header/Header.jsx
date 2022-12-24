@@ -5,7 +5,7 @@ import { HeaderContainer,MainHeader,FormContainer, FoodInput, Button , Select } 
 const Header = ({setQuery, query,setSelectedMeal, mealType, getData}) => {
 
  
-
+// form doldurulunca enter ya da  search tuşuna basınca çalışacak olan fonksiyonu yazdın.Burda her kullanıcı arayışında apı den veri çekilecek. 
   const handleSubmit = (e)=>{
     e.preventDefault()
     getData()
@@ -21,6 +21,7 @@ const Header = ({setQuery, query,setSelectedMeal, mealType, getData}) => {
      </MainHeader>
 
      <FormContainer onSubmit = {handleSubmit}>
+      {/*inputa girilen veriyi yakalıyorum*/}
 <FoodInput type="text" placeholder ="search" onChange ={(e)=>setQuery(e.target.value)} 
 value={query}/>
 
@@ -30,8 +31,10 @@ value={query}/>
 <Select
           name="mealType"
           id="mealType"
+           /*şeçilen öğünü yakalıyorum*/ 
           onChange={(e) => setSelectedMeal(e.target.value)}
         >
+          {/*Öğünleri tanımladım*/}
           {mealType.map((meal, index) => {
             return (
               <option key={index} value={meal}>

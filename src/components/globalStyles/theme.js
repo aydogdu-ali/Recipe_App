@@ -1,8 +1,11 @@
+
+
+
 const theme={
     colors:{
-        navbarBgColor:'#e1f1dd',
-        mainColor:'#00adb5',
-        logoColor:'#393e46',
+        navbarBgColor:'#F1F7B5',
+        mainColor:'#A8D1D1',
+        logoColor:'FD8A8A',
     },
     screens: {
         lg:"900px"

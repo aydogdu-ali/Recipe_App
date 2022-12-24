@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       {/*App da fazla dosya görünmemesi için AppRouter Componentini buraya çağırdım*/}
+      {/*Theme her yerde kullunmak için AppRouter sarmaladım.*/}
       <ThemeProvider theme={theme}>
         <AppRouter />
       </ThemeProvider>

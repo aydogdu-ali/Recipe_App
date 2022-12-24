@@ -10,9 +10,11 @@ export const GlobalStyles= createGlobalStyle`
 }
 
 body{
+   
     font-size: 1.3rem;
     font-weight: 700;
-    background-color: ${({theme})=>theme.colors.mainColor}
+    background-color: ${({theme})=>theme.colors.mainColor};
+    
 }
 
 `

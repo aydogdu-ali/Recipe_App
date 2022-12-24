@@ -28,11 +28,11 @@ text-align: center;
   padding: 1rem 2rem;
   cursor: pointer;
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.linkColor};
+  color: ${({ theme }) => theme.colors.navbarBgColor};
   transition: all 0.3s ease-in;
   &:hover {
-    color: ${({ theme }) => theme.colors.mainColor};
-    font-weight: bold;
+    
+   transform: scale(0.97);
   }
 
   @media (max-width: ${({ theme }) => theme.screens.lg}) {

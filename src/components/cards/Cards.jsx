@@ -6,6 +6,7 @@ import { MainContainer, Card,
 
 const Cards = ({recipes}) => {
 
+  // sayfa içi yönlendirme için navigate kullandım.
   const navigate = useNavigate()
 
   return (

@@ -6,8 +6,8 @@ import { ImgDiv, HomeImg,HeaderText } from './Home.style';
 import homeSvg from "../../assets/home.svg"
 
 const Home = () => {
-  const APP_ID = "56c66d94";
-  const APP_KEY = "b748a0cefd89b21ec128cd38783d9530";
+  const APP_ID = "4e9f05eb";
+  const APP_KEY = "9b904d703fa0d46a88ce1ac63f29f498";
   const [query, setQuery] = useState("");
   const [selectedMeal, setSelectedMeal] = useState("breakfast");
   const [recipes, setRecipes] = useState(null);

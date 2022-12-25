@@ -48,3 +48,18 @@ export const OtherPart = styled.div`
   font-size: 1.8rem;
   margin: 2rem;
 `;
+
+export const ButtonContainer = styled(Flex)``;
+
+export const Button = styled.button`
+  background: ${({ theme }) => theme.colors.mainColor};
+  padding: 0.7rem;
+  outline: none;
+  border: none;
+  margin: 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+`;

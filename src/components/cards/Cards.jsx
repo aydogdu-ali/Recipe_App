@@ -2,7 +2,7 @@ import React from 'react'
 import { MainContainer, Card,
  Header,Image, Button } from './Cards.style'
  import defaultImage from "../../assets/default-image.jpg"
- import {useNavigate} from "react-router-dom"
+ import {Outlet, useNavigate} from "react-router-dom"
 
 const Cards = ({recipes}) => {
 
@@ -24,6 +24,7 @@ const Cards = ({recipes}) => {
         )
 
       })}
+      <Outlet/>
     </MainContainer>
   )
 }

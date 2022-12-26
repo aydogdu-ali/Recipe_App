@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { LoginContainer, FormContainer,StyledImg, Header,StyledInput,StyledForm,StyledButton } from './Login.style'
 import {useNavigate} from "react-router-dom"
 import meal from "../../assets/meal.svg"
+import { LoginContext } from '../../contex/LoginContext'
 const Login = () => {
+
+  const {user, setUser} = useContext(LoginContext)
 
   const navigate = useNavigate();
   
   const userInfo={
-    username:"ali",
-    password:"ali"
+   user
   }
 
 
@@ -32,9 +34,14 @@ const Login = () => {
 {"<Chef>"} Recipe
     </Header>
     <StyledForm onSubmit={handleSubmit}>
-    <StyledInput placeholder=" ali giriniz" type="text" />
-          <StyledInput placeholder="ali giriniz" type="password" />
-          <StyledButton type="submit">Login</StyledButton>
+    <StyledInput placeholder=" ali giriniz" type="text" 
+    value={user?.username || ""}
+    onChange = {(e)=> setUser({...user, username:e.target.value})}/>
+          <StyledInput placeholder="ali giriniz" type="password" 
+          value={user?.password || ""}
+           onChange = {(e)=> setUser({...user, password:e.target.value})}/>
+          <StyledButton type="submit"
+          >Login</StyledButton>
 
     </StyledForm>
  

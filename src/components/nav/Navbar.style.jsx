@@ -28,7 +28,7 @@ text-align: center;
   padding: 1rem 2rem;
   cursor: pointer;
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.navbarBgColor};
+  color: ${({ theme }) => theme.colors.logoColor};
   transition: all 0.3s ease-in;
   &:hover {
     
